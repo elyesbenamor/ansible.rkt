@@ -1,17 +1,13 @@
 ---
-- name: Download Rkt 
+- name: Download Rkt
   get_url: >
    url=https://github.com/coreos/rkt/releases/download/v{{ rkt_version }}/rkt-v{{ rkt_version }}.tar.gz
-   dest=/tmp/packer_{{ rkt_version }}_linux_amd64.zip
+   dest=/tmp/rkt.zip
 
-- name: Ensures /opt/rkt dir exists
-  file: >
-   path=/opt/rkt 
-   recurse=yes
-   state=directory
-
-- name: Extract Rkt 
+- name: Extract Rkt
   unarchive: >
-   src=/tmp/packer_{{ rkt_version }}_linux_amd64.zip
-   dest=/opt/rkt/
+   src=/tmp/rkt.zip
+   dest=/opt/
    copy=no
+   owner={{ ansible_ssh_user }}
+  become: yes
