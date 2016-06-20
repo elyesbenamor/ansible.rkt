@@ -1,0 +1,3 @@
+---
+# defaults file for ledongthuc.rkt-install
+rkt_version: "1.8.0"
