@@ -2,8 +2,8 @@
 - name: Download Rkt 
   get_url: >
    url=https://github.com/coreos/rkt/releases/download/v{{ rkt_version }}/rkt-v{{ rkt_version }}.tar.gz
-   dest=/tmp/packer_{{ packer_version }}_linux_amd64.zip
+   dest=/tmp/packer_{{ rkt_version }}_linux_amd64.zip
 - name: Extract Rkt 
-  unarchive: src=/tmp/packer_{{ packer_version }}_linux_amd64.zip
+  unarchive: src=/tmp/packer_{{ rkt_version }}_linux_amd64.zip
              dest=/opt/rkt/
              copy=no
