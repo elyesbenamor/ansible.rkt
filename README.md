@@ -14,7 +14,7 @@ Example
 
 Install from Galaxy:
 
-	`$ ansible-galaxy install ledongthuc.rkt-install`
+	$ ansible-galaxy install ledongthuc.rkt-install
 
 For default configuration:
 
