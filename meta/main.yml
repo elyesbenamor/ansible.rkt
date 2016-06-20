@@ -3,6 +3,7 @@ galaxy_info:
   description: This role for install rkt into server (Testing with Ubuntu)
   license: MIT 
   min_ansible_version: 1.2
+  platforms:
   - name: Ubuntu
     versions:
     - trusty64 
