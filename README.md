@@ -7,7 +7,9 @@ Currently, I tested it with Ubuntu trusty64
 Role Variables
 --------------
 
-	rkt_version: version of Rkt that you want install. Default's 1.8.0
+	| Variable's name | Description | Example |
+	| ------------- | ------------- |
+	| rkt_version  | version of Rkt that you want install. Default's 1.8.0  | 1.8.0  |
 
 Example 
 ----------------
@@ -16,13 +18,13 @@ Install from Galaxy:
 
 	$ ansible-galaxy install ledongthuc.rkt-install
 
-For default configuration:
+Playbook (for default variables):
 
     - hosts: all
       roles: 
       	- ledongthuc.rkt-install
 
-For specific variables:
+Playbook (for specific variables):
 
     - hosts: all
       roles:
