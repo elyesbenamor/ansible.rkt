@@ -3,7 +3,15 @@
   get_url: >
    url=https://github.com/coreos/rkt/releases/download/v{{ rkt_version }}/rkt-v{{ rkt_version }}.tar.gz
    dest=/tmp/packer_{{ rkt_version }}_linux_amd64.zip
+
+- name: Ensures /opt/rkt dir exists
+  file: >
+   path=/opt/rkt 
+   recurse=yes
+   state=directory
+
 - name: Extract Rkt 
-  unarchive: src=/tmp/packer_{{ rkt_version }}_linux_amd64.zip
-             dest=/opt/rkt/
-             copy=no
+  unarchive: >
+   src=/tmp/packer_{{ rkt_version }}_linux_amd64.zip
+   dest=/opt/rkt/
+   copy=no
