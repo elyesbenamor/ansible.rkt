@@ -7,9 +7,9 @@ Currently, I tested it with Ubuntu trusty64
 Role Variables
 --------------
 
-	| Variable's name | Description | Example |
-	| ------------- | ------------- |
-	| rkt_version  | version of Rkt that you want install. Default's 1.8.0  | 1.8.0  |
+| Variable's name | Description | Example |
+| ------------- | ------------- |
+| rkt_version  | version of Rkt that you want install. Default's 1.8.0  | 1.8.0  |
 
 Example 
 ----------------
