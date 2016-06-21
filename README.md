@@ -8,7 +8,7 @@ Role Variables
 --------------
 
 | Variable's name | Description | Example |
-| ------------- | ------------- |
+| --------------- | ----------- | ------- |
 | rkt_version  | version of Rkt that you want install. Default's 1.8.0  | 1.8.0  |
 
 Example 
