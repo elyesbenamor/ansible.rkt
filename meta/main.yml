@@ -1,17 +1,26 @@
+dependencies: []
 galaxy_info:
-  author: Thuc Le 
-  description: This role for install rkt into server (Testing with Ubuntu)
-  license: MIT 
+  author: Thuc Le
+  description: Install Rkt container engine
+  company: 
+  issue_tracker_url: https://github.com/ledongthuc/ansible.rkt/issues
+  license: license (Apache)
   min_ansible_version: 1.2
+  github_branch: master
   platforms:
+  - name: Fedora
+    versions:
+    - all
+  - name: MacOSX
+    versions:
+    - all
   - name: Ubuntu
     versions:
-    - trusty 
-  - name: centos
+    - all
+  - name: Debian
     versions:
-    - 7
-  galaxy_tags: [
-      rkt,
-      container
-  ]
-dependencies: []
+    - all
+
+  galaxy_tags:
+  - container
+  - rkt 

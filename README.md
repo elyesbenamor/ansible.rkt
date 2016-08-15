@@ -2,7 +2,6 @@ Rkt Install
 =========
 
 Usage for install and start the Rkt container runtime in linux.
-Currently, I tested it with Ubuntu trusty64 
 
 Role Variables
 --------------
